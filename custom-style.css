@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #20c997; /* Teal */
+    --primary-color-rgb: 32, 201, 151; /* RGB for Teal */
+    --secondary-color: #6C757D; /* Bootstrap secondary gray */
+    --light-bg: #f8f9fa; /* Light gray for section backgrounds */
+    --dark-text: #212529;
+    --light-text: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-text);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Navbar Styling */
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+.nav-link {
+   font-weight: 600;
+}
+.nav-link:hover {
+   color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+#hero {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding-top: 120px; /* Adjusted for fixed-top navbar */
+    padding-bottom: 100px;
+}
+#hero h1 {
+    color: var(--light-text);
+    font-weight: 700;
+}
+#hero .lead {
+    color: rgba(255, 255, 255, 0.85);
+}
+#hero .btn-primary { /* Customizing the primary button in hero */
+   background-color: var(--light-text) !important;
+   color: var(--primary-color) !important;
+   border: 2px solid var(--light-text) !important;
+   font-weight: bold;
+   padding: 0.75rem 1.5rem;
+}
+#hero .btn-primary:hover {
+   background-color: transparent !important;
+   color: var(--light-text) !important;
+}
+
+/* Section Styling (General) */
+section { 
+    padding: 60px 0; 
+}
+
+#solucion, #cta { /* Sections with default background */
+    background-color: #ffffff;
+}
+#problema, #beneficios { /* Sections with light background */
+    background-color: var(--light-bg); /* This might conflict/be redundant if Bootstrap bg-light is used, but let's follow instructions */
+}
+
+/* Card Styling */
+#precios .card {
+    border: none;
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+#precios .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+#precios .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+#precios .card.plan-pyme {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 .5rem 1.5rem rgba(var(--primary-color-rgb), .25)!important;
+}
+#precios .card.plan-pyme .btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-text);
+}
+#precios .card.plan-pyme .btn:hover {
+    background-color: #1aa083; /* Darker teal */
+    border-color: #1aa083;
+    color: var(--light-text);
+}
+
+
+/* Button Styling (Global) */
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #1aa083; /* Darker teal */
+    border-color: #1aa083;
+}
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+.btn-success { /* CTA button, ensure it uses primary color for consistency or define a success color */
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-success:hover {
+    background-color: #1aa083; /* Darker teal */
+    border-color: #1aa083;
+}
+
+
+/* Benefit Items */
+#beneficios .col-md-4 h4 i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+/* Adding Bootstrap Icons CDN to HTML would be good for actual icons, this just styles the <i> if used */
+
+/* Typography Adjustments */
+section h2.display-5 {
+    margin-bottom: 3rem !important;
+    font-weight: 700;
+}
+
+/* Adjust fixed-top navbar padding */
+body {
+  padding-top: 56px; /* Default navbar height */
+}
+
+/* Ensure hero button hover has light text */
+#hero .btn-primary:hover {
+   color: var(--light-text) !important; /* Ensure text stays light on transparent bg */
+}
+
+/* Price styling */
+#precios .card-title {
+    color: var(--primary-color);
+}
+#precios .card-title small {
+    color: var(--secondary-color);
+}
+
+/* List group item color in solution section */
+#solucion .list-group-item {
+    color: var(--dark-text); /* Ensure readability if bg is white */
+}
