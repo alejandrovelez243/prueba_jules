@@ -4,103 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaaS Cobranzas IA - Automatiza tu Gestión de Cobros para PyMEs</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <header>
-        <h1>Optimiza Tus Cobranzas con Inteligencia Artificial</h1>
-        <nav>
-            <ul><li><a href="#precios">Planes</a></li></ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">AsistenteCobranza IA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#precios">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
-        <section id="hero">
-            <h2>¡Recupera tu Dinero y Tiempo! Deja que la IA Gestione Tus Cobranzas.</h2>
-            <p>Nuestra plataforma de asistentes IA está diseñada para PyMEs como la tuya. Simplifica la cobranza, mejora tu flujo de caja y enfócate en crecer tu negocio, sin necesidad de un call center costoso.</p>
-        </section>
-
-        <section id="problema">
-            <h2>El Desafío de las Cobranzas para las PyMEs</h2>
-            <p>Sabemos que gestionar cobros puede ser un dolor de cabeza: consume tiempo valioso, requiere seguimiento constante y puede ser incómodo. Las soluciones tradicionales suelen ser caras o complejas, dejando a muchas PyMEs sin una herramienta eficaz.</p>
-            <p>Esto se traduce en cuentas por cobrar que se acumulan, impactando negativamente tu liquidez y frenando el potencial de tu empresa.</p>
-        </section>
-
-        <section id="solucion">
-            <h2>Nuestra Solución: Asistentes de Cobranza IA Inteligentes y Amigables</h2>
-            <p>Te ofrecemos una solución innovadora: asistentes virtuales con inteligencia artificial que se encargan del proceso de cobranza de forma automática y eficiente. Nuestros asistentes pueden:</p>
-            <ul>
-                <li>Realizar recordatorios de pago y contactar a tus clientes de manera amigable y profesional.</li>
-                <li>Negociar acuerdos de pago según tus parámetros.</li>
-                <li>Registrar y gestionar los pagos, actualizando el estado de cada cuenta.</li>
-                <li>Permitir la carga manual de datos para empresas que inician, y escalar a integraciones vía API para mayor volumen.</li>
-                <li>Generar reportes claros para que siempre estés al tanto del estado de tus cobranzas.</li>
-            </ul>
-            <p>Todo esto en una plataforma sencilla de usar, pensada para que no necesites conocimientos técnicos avanzados.</p>
-        </section>
-
-        <section id="beneficios">
-            <h2>¿Por Qué Elegir Nuestra Plataforma?</h2>
-            <ul>
-                <li><strong>Ahorra Dinero:</strong> Mucho más económico que un call center tradicional o contratar personal dedicado.</li>
-                <li><strong>Ahorra Tiempo:</strong> Automatiza tareas repetitivas y libera a tu equipo para enfocarse en el core de tu negocio.</li>
-                <li><strong>Mejora tu Flujo de Caja:</strong> Reduce los tiempos de pago y recupera deudas de forma más efectiva.</li>
-                <li><strong>Fácil de Usar:</strong> Interfaz intuitiva y reportes sencillos de entender. ¡Sin complicaciones!</li>
-                <li><strong>Escalable:</strong> Comienza con carga manual y crece hasta integraciones completas con tus sistemas.</li>
-                <li><strong>Comunicación Profesional:</strong> Mantén una buena relación con tus clientes con un trato amable y respetuoso.</li>
-            </ul>
-        </section>
-
-        <section id="precios">
-            <h2>Planes Pensados para Tu Crecimiento</h2>
-            <div class="pricing-plans-container">
-                <div class="plan-item">
-                    <h3>Plan Gratuito</h3>
-                    <p>Precio: $0/mes</p>
-                    <ul>
-                        <li>Hasta 50 contactos</li>
-                        <li>Funciones básicas de recordatorio</li>
-                        <li>Reportes simples</li>
-                        <li>Carga manual de datos</li>
-                    </ul>
-                    <button>Empezar Gratis</button>
-                </div>
-                <div class="plan-item">
-                    <h3>Plan PyME</h3>
-                    <p>Precio: $49/mes (facturación anual)</p>
-                    <ul>
-                        <li>Hasta 500 contactos</li>
-                        <li>Recordatorios y negociación básica de acuerdos</li>
-                        <li>Reportes detallados</li>
-                        <li>Soporte por email</li>
-                        <li>Opción a integración API (costo adicional)</li>
-                    </ul>
-                    <button>Elegir Plan PyME</button>
-                </div>
-                <div class="plan-item">
-                    <h3>Plan PRO</h3>
-                    <p>Precio: $99/mes (facturación anual)</p>
-                    <ul>
-                        <li>Contactos Ilimitados</li>
-                        <li>Todas las funciones de IA: recordatorios, negociación avanzada, gestión de pagos</li>
-                        <li>Reportes avanzados y personalizables</li>
-                        <li>Integración API incluida</li>
-                        <li>Soporte prioritario</li>
-                    </ul>
-                    <button>Elegir Plan PRO</button>
+        <section id="hero" class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="display-4 fw-bold">¡Recupera tu Dinero y Tiempo! Deja que la IA Gestione Tus Cobranzas.</h1>
+                    <p class="lead text-muted">Nuestra plataforma de asistentes IA está diseñada para PyMEs como la tuya. Simplifica la cobranza, mejora tu flujo de caja y enfócate en crecer tu negocio, sin necesidad de un call center costoso.</p>
+                    <p>
+                        <a href="#precios" class="btn btn-primary btn-lg">Ver Planes</a>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="cta">
-            <h2>¿Listo para Transformar tu Proceso de Cobranzas?</h2>
-            <p>Únete a las empresas que ya están optimizando su gestión de cobros con inteligencia artificial.</p>
-            <button>Regístrate Ahora y Prueba Gratis</button>
+        <section id="problema" class="container py-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="display-5 fw-bold mb-4">El Desafío de las Cobranzas para las PyMEs</h2>
+                    <p class="lead">Sabemos que gestionar cobros puede ser un dolor de cabeza: consume tiempo valioso, requiere seguimiento constante y puede ser incómodo. Las soluciones tradicionales suelen ser caras o complejas, dejando a muchas PyMEs sin una herramienta eficaz.</p>
+                    <p>Esto se traduce en cuentas por cobrar que se acumulan, impactando negativamente tu liquidez y frenando el potencial de tu empresa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solucion" class="container py-5">
+            <h2 class="display-5 fw-bold text-center mb-5">Nuestra Solución: Asistentes de Cobranza IA Inteligentes y Amigables</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <p>Te ofrecemos una solución innovadora: asistentes virtuales con inteligencia artificial que se encargan del proceso de cobranza de forma automática y eficiente. Nuestros asistentes pueden:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Realizar recordatorios de pago y contactar a tus clientes de manera amigable y profesional.</li>
+                        <li class="list-group-item">Negociar acuerdos de pago según tus parámetros.</li>
+                        <li class="list-group-item">Registrar y gestionar los pagos, actualizando el estado de cada cuenta.</li>
+                        <li class="list-group-item">Permitir la carga manual de datos para empresas que inician, y escalar a integraciones vía API para mayor volumen.</li>
+                        <li class="list-group-item">Generar reportes claros para que siempre estés al tanto del estado de tus cobranzas.</li>
+                    </ul>
+                    <p class="mt-3">Todo esto en una plataforma sencilla de usar, pensada para que no necesites conocimientos técnicos avanzados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-center mb-5">¿Por Qué Elegir Nuestra Plataforma?</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h4><i class="bi bi-currency-dollar me-2"></i>Ahorra Dinero</h4>
+                        <p>Mucho más económico que un call center tradicional o contratar personal dedicado.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4><i class="bi bi-clock-fill me-2"></i>Ahorra Tiempo</h4>
+                        <p>Automatiza tareas repetitivas y libera a tu equipo para enfocarse en el core de tu negocio.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4><i class="bi bi-graph-up-arrow me-2"></i>Mejora tu Flujo de Caja</h4>
+                        <p>Reduce los tiempos de pago y recupera deudas de forma más efectiva.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4><i class="bi bi-easel2-fill me-2"></i>Fácil de Usar</h4>
+                        <p>Interfaz intuitiva y reportes sencillos de entender. ¡Sin complicaciones!</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4><i class="bi bi-hdd-stack-fill me-2"></i>Escalable</h4>
+                        <p>Comienza con carga manual y crece hasta integraciones completas con tus sistemas.</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4><i class="bi bi-headset me-2"></i>Comunicación Profesional</h4>
+                        <p>Mantén una buena relación con tus clientes con un trato amable y respetuoso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="precios" class="container py-5">
+            <h2 class="display-5 fw-bold text-center mb-5">Planes Pensados para Tu Crecimiento</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Plan Gratuito</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mes</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Hasta 50 contactos</li>
+                                <li>Funciones básicas de recordatorio</li>
+                                <li>Reportes simples</li>
+                                <li>Carga manual de datos</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Empezar Gratis</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col plan-pyme">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Plan PyME</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$49<small class="text-muted fw-light">/mes</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Hasta 500 contactos</li>
+                                <li>Recordatorios y negociación básica de acuerdos</li>
+                                <li>Reportes detallados</li>
+                                <li>Soporte por email</li>
+                                <li>Opción a integración API (costo adicional)</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Elegir Plan PyME</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Plan PRO</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$99<small class="text-muted fw-light">/mes</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Contactos Ilimitados</li>
+                                <li>Todas las funciones de IA: recordatorios, negociación avanzada, gestión de pagos</li>
+                                <li>Reportes avanzados y personalizables</li>
+                                <li>Integración API incluida</li>
+                                <li>Soporte prioritario</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Elegir Plan PRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="container py-5 text-center">
+            <h2 class="display-5 fw-bold">¿Listo para Transformar tu Proceso de Cobranzas?</h2>
+            <p class="lead mb-4">Únete a las empresas que ya están optimizando su gestión de cobros con inteligencia artificial.</p>
+            <button type="button" class="btn btn-success btn-lg">Regístrate Ahora y Prueba Gratis</button>
         </section>
     </main>
 
-    <footer>
+    <footer class="container py-4 text-center text-muted">
         <p>&copy; 2024 AsistenteCobranza IA. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
