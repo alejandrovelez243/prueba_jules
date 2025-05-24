@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* Layout */
+header, nav, main, section, footer {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Pricing Section Specifics */
+#precios {
+    text-align: center;
+}
+
+.pricing-plans-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows plans to wrap on smaller screens */
+}
+
+.plan-item {
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    margin: 1em;
+    background-color: #fff;
+    flex: 1; /* Allows items to grow and shrink */
+    min-width: 250px; /* Minimum width for each plan item */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.plan-item h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.plan-item p { /* Price styling */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; /* Example color */
+    margin-bottom: 1em;
+}
+
+.plan-item ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.plan-item ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#cta button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
